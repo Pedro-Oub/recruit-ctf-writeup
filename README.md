@@ -29,9 +29,9 @@ nmap -sC -sV TARGET-IP
 
 *Screenshot: Nmap results*
 
-```
+
 ![Alt text](screenshots/nmap.jpg)
-```
+
 
 ---
 
