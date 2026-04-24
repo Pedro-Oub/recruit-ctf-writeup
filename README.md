@@ -10,9 +10,9 @@ https://tryhackme.com/room/recruitwebchallenge
 
 This room simulates a real-world web application assessment where multiple vulnerabilities must be chained together to gain administrative access, 
 gaining access to the 2 flags required for the room completion.
-```
+
 ![Alt text](screenshots/recruit_login.jpg)
-```
+
 ---
 
 ### STEP 1: Nmap Scan
@@ -38,7 +38,7 @@ nmap -sC -sV TARGET-IP
 ### STEP 2: Directory Bruteforce
 
 ```bash
-gobuster dir -u http://10.129.152.236 -w /usr/share/wordlists/dirb/common.txt
+gobuster dir -u http://TARGET-IP -w /root/Tools/wordlists/dirb/common.txt
 ```
 
 **Interesting endpoints to consider:**
@@ -50,9 +50,9 @@ gobuster dir -u http://10.129.152.236 -w /usr/share/wordlists/dirb/common.txt
 
 *Screenshot: Gobuster output*
 
-```
+
 ![Alt text](screenshots/gobuster.jpg)
-```
+
 
 ---
 
@@ -74,9 +74,9 @@ Revealed internal communication.
 
 *Screenshot: mail.log contents*
 
-```
+
 ![Alt text](screenshots/mail.jpg)
-```
+
 
 ---
 
@@ -106,9 +106,9 @@ http://TARGET-IP/file.php?cv=file:///var/www/html/config.php
 
 *Screenshot: config.php via SSRF*
 
-```
+
 ![Alt text](screenshots/config.jpg)
-```
+
 
 ---
 
@@ -129,9 +129,9 @@ Logged into the web app using:
 
 *Screenshot: HR dashboard + flag*
 
-```
+
 ![Alt text](screenshots/hr_login.jpg)
-```
+
 
 ---
 
@@ -157,9 +157,9 @@ You have an error in your SQL syntax near '%''
 
 *Screenshot: SQL error*
 
-```
-![Nmap Scan](screenshots/error.jpg)
-```
+
+![Alt text](screenshots/error.jpg)
+
 
 ---
 
@@ -214,9 +214,9 @@ Extracted:
 
 *Screenshot: credentials dump*
 
-```
+
 ![Alt text](screenshots/sqli_table.jpg)
-```
+
 
 ---
 
@@ -228,9 +228,9 @@ Successfully obtained admin flag:
 
 *Screenshot: admin dashboard + flag*
 
-```
+
 ![Alt text](screenshots/admin_login.jpg)
-```
+
 
 ---
 
