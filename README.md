@@ -10,7 +10,7 @@
 This room simulates a real-world web application assessment where multiple vulnerabilities must be chained together to gain administrative access, 
 gaining access to the 2 flags required for the room completion.
 ```
-![Nmap Scan](screenshots/recruit_login.jpg)
+![Alt text](screenshots/recruit_login.jpg)
 ```
 ---
 
@@ -29,7 +29,7 @@ nmap -sC -sV TARGET-IP
 *Screenshot: Nmap results*
 
 ```
-![Nmap Scan](screenshots/nmap.jpg)
+![Alt text](screenshots/nmap.jpg)
 ```
 
 ---
@@ -50,7 +50,7 @@ gobuster dir -u http://10.129.152.236 -w /usr/share/wordlists/dirb/common.txt
 *Screenshot: Gobuster output*
 
 ```
-![Nmap Scan](screenshots/gobuster.jpg)
+![Alt text](screenshots/gobuster.jpg)
 ```
 
 ---
@@ -74,7 +74,7 @@ Revealed internal communication.
 *Screenshot: mail.log contents*
 
 ```
-![Nmap Scan](screenshots/mail.jpg)
+![Alt text](screenshots/mail.jpg)
 ```
 
 ---
@@ -103,10 +103,10 @@ http://TARGET-IP/file.php?cv=file:///var/www/html/config.php
 
  Allowed us to successfully retrieve the configuration file.
 
-📸 *Screenshot: config.php via SSRF*
+*Screenshot: config.php via SSRF*
 
 ```
-![Nmap Scan](screenshots/config.jpg)
+![Alt text](screenshots/config.jpg)
 ```
 
 ---
@@ -129,7 +129,7 @@ Logged into the web app using:
 *Screenshot: HR dashboard + flag*
 
 ```
-![Nmap Scan](screenshots/hr_login.jpg)
+![Alt text](screenshots/hr_login.jpg)
 ```
 
 ---
@@ -211,10 +211,10 @@ Extracted:
 * **Username:** `admin`
 * **Password:** `(password is in the Position field)`
 
-📸 *Screenshot: credentials dump*
+*Screenshot: credentials dump*
 
 ```
-![Nmap Scan](screenshots/sqli_table.jpg)
+![Alt text](screenshots/sqli_table.jpg)
 ```
 
 ---
@@ -228,7 +228,7 @@ Successfully obtained admin flag:
 *Screenshot: admin dashboard + flag*
 
 ```
-![Nmap Scan](screenshots/admin_login.jpg)
+![Alt text](screenshots/admin_login.jpg)
 ```
 
 ---
