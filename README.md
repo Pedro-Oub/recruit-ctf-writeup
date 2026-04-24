@@ -1,4 +1,5 @@
 # TryHackMe – Recruit CTF Room Write-up
+https://tryhackme.com/room/recruitwebchallenge
 
 > End-to-end exploitation of a vulnerable recruitment portal:
 > Main Solution Plan: SSRF -> LFI -> SQL injection -> Admin takeover
