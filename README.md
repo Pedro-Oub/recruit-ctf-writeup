@@ -130,7 +130,7 @@ Logged into the web app using:
 *Screenshot: HR dashboard + flag*
 
 
-![Alt text](screenshots/hr_login.jpg)
+![Alt text](screenshots/HR_login.jpg)
 
 
 ---
